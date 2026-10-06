@@ -6,7 +6,7 @@ Future<String> fetchUserData(String userId) async {
 }
 
 Future<String> fetchProductData(String productId) async {
-  await Future.delayed(Duration(seconds: 1));
+  await Future.delayed(Duration(milliseconds: 500));
   return 'Product Data for $productId';
 }
 
@@ -29,7 +29,7 @@ void streamCombineTest() {
 /*
 Output
 
-Received: User Data for user123
 Received: Product Data for prod456
+Received: User Data for user123
 All futures completed and stream is done.
  */
